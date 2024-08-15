@@ -16,6 +16,7 @@ An easier and more powerful way access and manage bookmarks in MacOS via Alfred,
 - **Fuzzy Matching**: Searching is made easy with fuzzy matching, which allows for partial matches and occasional typos.
 - **Pinyin Support**: If the key of the bookmark is written fully or partially in Chinese, you will be able to match them using pinyin. Note however that fuzzy matching won't be applied in this case.
 - **Bookmark Groups**: Instead of only binding a single URL to a bookmark, like how it is traditionally done in browsers, you can open any number of links using a single key.
+- **Cross-browser Support**: Since your bookmarks are not stored to any browser in particular, you can always switch what browser to open bookmarks in.
 
 ## Installation
 
