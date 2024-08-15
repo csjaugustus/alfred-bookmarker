@@ -1,13 +1,13 @@
 # Bookmarker
 
 <p align="center">
-  <img src="bookmarker-display-icon.png" alt="Bookmarker Logo">
+  <img src="bookmarker-display-icon.png" alt="Bookmarker Logo" width="100" height="100">
 </p>
 
 An easier and more powerful way access and manage bookmarks in MacOS via Alfred, without being bound to any specific browser.
 
 <p align="center">
-  <img src="preview.gif" alt="Bookmarker Preview">
+  <img src="bookmarker-preview.gif" alt="Bookmarker Preview">
 </p>
 
 ## Features
