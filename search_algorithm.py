@@ -72,6 +72,3 @@ def fuzzy_search(query, target, threshold=fuzz_value):
         max_score += (match_count - 1) * 10  # Adding 10 points per additional word
 
     return max_score
-
-if __name__ == "__main__":
-    print(fuzzy_search('a', 'Way Marketing Social Media Folder'))
