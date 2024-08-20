@@ -35,6 +35,12 @@ Note that you will need to install them via the exact Python that Alfred uses; o
 
 ## How to Install Python Dependencies
 
+**Update: You can now automaticaly install all dependencies using the correct Python by typing the following command via Alfred:**
+
+```
+`bookmarker_setup
+```
+
 To ensure that dependencies are installed for the same Python that is used for the scripts in this workflow, you can open the workflow's directory and open any of the `.py` files. Then input this line at the very beginning:
 
 ```python
