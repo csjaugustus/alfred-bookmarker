@@ -10,7 +10,7 @@ An easier and more powerful way access and manage bookmarks in MacOS via Alfred,
   <img src="bookmarker-preview.gif" alt="Bookmarker Preview">
 </p>
 
-## Features
+# Features
 
 - **Two-Way Searching:** Bookmarks can be searched via their key or any of the URL links bound to them.
 - **Fuzzy Matching**: Searching is made easy with fuzzy matching, which allows for partial matches and occasional typos.
@@ -18,46 +18,24 @@ An easier and more powerful way access and manage bookmarks in MacOS via Alfred,
 - **Bookmark Groups**: Instead of only binding a single URL to a bookmark, like how it is traditionally done in browsers, you can open any number of links using a single key.
 - **Cross-browser Support**: Since your bookmarks are not stored to any browser in particular, you can always switch what browser to open bookmarks in.
 
+# Setup
+
 ## Installation
+1. Download Alfred [here](https://www.alfredapp.com). Requires PowerPack.
+2. Download Python [here](https://www.python.org/downloads/).
+3. Get the latest version of the workflow via [Releases](https://github.com/csjaugustus/alfred-bookmarker/releases).
 
-Install the following dependencies via pip: `pinyin`, `thefuzz`.
-
-Download the workflow via [Releases](https://github.com/csjaugustus/alfred-bookmarker/releases).
-
-Note that you will need to install them via the exact Python that Alfred uses; otherwise it leads to packages not being found. This notably causes issues when Python is installed via homebrew. Read [How to Install Python Dependencies](#how-to-install-python-dependencies) for more detailed info.
-
-## Usage
-
-- `b` - Search for bookmarks.
-- `ab` - Add a bookmark. If the key doesn't already exist, it creates a new key and asks for URL(s); if it does, you will be adding URL(s) to a pre-existing entry.
-- `db` - Delete a bookmark.
-- `eb` - Edit bookmarks. This just opens the json file where all bookmarks are stored, allowing for easier editing. Use this if `ab` or `db` is too cumbersome.
-
-## How to Install Python Dependencies
-
-**Update: You can now automaticaly install all dependencies using the correct Python by typing the following command via Alfred:**
+## Configuration
+1. Once you install the workflow, you will need to run a setup to install the required dependencies (`thefuzz` and `pinyin`). You simply need to type this command in Alfred:
 
 ```
 `bookmarker_setup
 ```
 
-To ensure that dependencies are installed for the same Python that is used for the scripts in this workflow, you can open the workflow's directory and open any of the `.py` files. Then input this line at the very beginning:
+# Usage
 
-```python
-import sys
-
-print(sys.executable)
-```
-
-Then turn on the debugger console in your Alfred workflow window. It should print the path of the Python executable.
-
-For example if the path you get is `/opt/homebrew/opt/python@3.12/bin/python3.12`, you will need to install your packages like so:
-
-```python
- /opt/homebrew/opt/python@3.12/bin/python3.12 -m pip install package_name --break-system-packages
-```
-
-(`--break-system-packages` is only required if the path is a homebrew one. Not including this will throw an error message.)
-
-It is recommended to bind this to a snippet or snippet trigger for easier installation in the future.
+- `b` - Search for bookmarks.
+- `ab` - Add a bookmark. If the key doesn't already exist, it creates a new key and asks for URL(s); if it does, you will be adding URL(s) to a pre-existing entry.
+- `db` - Delete a bookmark.
+- `eb` - Edit bookmarks. This just opens the json file where all bookmarks are stored, allowing for easier editing. Use this if `ab` or `db` is too cumbersome.
 
